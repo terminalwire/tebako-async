@@ -22,3 +22,8 @@ jobs:
           ruby-version: 3.2.5
 
       - run: rake
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: tebako-binance-package
+          path: tebako-binance-package      
